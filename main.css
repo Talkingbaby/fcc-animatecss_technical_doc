@@ -1,0 +1,23 @@
+div.col.s3 {
+    padding: 0;
+}
+div.collection {
+    margin: 0;
+}
+/*#animation, #animation-items {
+    padding: 5px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+}*/
+
+#animation-items {
+    display: none;
+}
+#animation-items {
+    border: 0;
+}
+#animation-items .collection-item {
+    padding-left: 3em;
+    border: 0;
+}
