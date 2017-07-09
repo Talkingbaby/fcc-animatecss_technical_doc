@@ -1,16 +1,17 @@
+.row {
+    margin: 0 auto;
+}
+.navigation {
+    height: 100%;
+    border-right: 1px solid #e0e0e0;
+}
 div.col.s3 {
     padding: 0;
 }
 div.collection {
     margin: 0;
+    border: none;
 }
-/*#animation, #animation-items {
-    padding: 5px;
-    text-align: center;
-    background-color: #e5eecc;
-    border: solid 1px #c3c3c3;
-}*/
-
 #animation-items {
     display: none;
 }
