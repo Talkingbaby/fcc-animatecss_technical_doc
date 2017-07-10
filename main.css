@@ -23,6 +23,23 @@ div.collection {
     border: 0;
 }
 /*main doc*/
+main {
+    overflow: scroll;
+    height: 100vh;
+}
 h5 {
     padding-left: 2em;
+    margin-top: 2.14rem;
+}
+h4 {
+    margin-top: 3.14rem;
+}
+span.grey {
+    padding: 3px;
+}
+ul.class-names {
+    padding-left: 5em;
+}
+ul.class-names li {
+    margin: 5px;
 }

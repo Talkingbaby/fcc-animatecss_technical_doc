@@ -11,14 +11,11 @@
       rel="stylesheet">
 <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
-
-  <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
   <link rel="stylesheet" href="main.css">
 </head>
 <body>
 <div class="row">
-    <div class="col s3 navigation z-depth-3">
+    <div class="col s3 navigation z-depth-3 navbar-fixed">
         <div class="collection with-header">
             <header class="collection-header center">
                 <h3>Animate.css</h3>
@@ -26,7 +23,7 @@
             </header>
             <a href="#Installation" class="collection-item">Installation</a>
             <a href="#How_to" class="collection-item">How to</a>
-            <a href="#Animations" id="animation" class="collection-item">Animations</a>
+            <a href="#" id="animation" class="collection-item">Animations</a>
             <div id="animation-items" class="collection">
                 <a href="#Attention_Seekers" class="collection-item">Attention Seekers</a>
                 <a href="#Bouncing" class="collection-item">Bouncing</a>
@@ -45,39 +42,258 @@
         </div>
     </div>
     <main id="main-doc" class="col s9">
-        <section id="Installation" class="main-section">
+        <div class="container">
+            <section id="Installation" class="main-section">
             <header><h4>Installation</h4></header>
+            <hr>
+            <p>To install via Bower, simply do the following:</p>
+            <div class="card-panel grey lighten-3">
+                <span>$ bower install animate.css --save</span>
+            </div>
+            <p>or you can install via npm:</p>
+            <div class="card-panel grey lighten-3">
+                <span>$ npm install animate.css --save</span>
+            </div>
         </section>
         <section id="How_to" class="main-section">
             <header><h4>How to</h4></header>
+            <hr>
+            <p>1. Include the stylesheet on your document's &lt;head&gt;</p>
+            <div class="card-panel grey lighten-3">
+                <span>
+                     &lt;head&gt;<br>
+                     &lt;link rel="stylesheet" href="animate.min.css"&gt;<br>
+                     &lt;/head&gt;
+                </span>
+            </div>
+            <p>or use the version hosted by <a href="https://cdnjs.com/libraries/animate.css">CDNJS</a></p>
+            <div class="card-panel grey lighten-3">
+                <span>
+                     &lt;head&gt;<br>
+                     &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"&gt;<br>
+                     &lt;/head&gt;
+                </span>
+            </div>
+            <p>2. Add the class <span class="grey lighten-3 ">animated</span> to the element you want to animate. You may also want to include the class <span class="grey lighten-3 ">infinite</span> for an infinite loop.</p>
+            <p>3. Finally you need to add one of the following classes which you can find below.</p>
+            <p>Full example:</p>
+            <div class="card-panel grey lighten-3">
+                <span>
+                    &lt;h1 class="animated infinite bounce"&gt;Example&lt;/h1&gt;
+                </span>
+            </div>
         </section>
         <section id="Animations" class="main-section">
             <header><h4>Animations</h4></header>
+            <hr>
             <ul>
-                <li><h5 id="Attention_Seekers">Attention Seekers</h5></li>
-                <li><h5 id="Bouncing">Bouncing</h5></li>
-                <li><h5 id="Fading">Fading</h5></li>
-                <li><h5 id="Flippers">Flippers</h5></li>
-                <li><h5 id="Lightspeed">Lightspeed</h5></li>
-                <li><h5 id="Rotating">Rotating</h5></li>
-                <li><h5 id="Sliding">Sliding</h5></li>
-                <li><h5 id="Zoom">Zoom</h5></li>
-                <li><h5 id="Specials">Specials</h5></li>
+                <li>
+                    <h5 id="Attention_Seekers">Attention Seekers</h5>
+                    <ul class="class-names">
+                        <li><span class="grey lighten-3 ">bounce</span></li>
+                        <li><span class="grey lighten-3 ">flash</span></li>
+                        <li><span class="grey lighten-3 ">pulse</span></li>
+                        <li><span class="grey lighten-3 ">rubberBand</span></li>
+                        <li><span class="grey lighten-3 ">shake</span></li>
+                        <li><span class="grey lighten-3 ">headShake</span></li>
+                        <li><span class="grey lighten-3 ">swing</span></li>
+                        <li><span class="grey lighten-3 ">tada</span></li>
+                        <li><span class="grey lighten-3 ">wobble</span></li>
+                        <li><span class="grey lighten-3 ">jello</span></li>
+                    </ul>
+                </li>
+                <li>
+                    <h5 id="Bouncing">Bouncing</h5>
+                    <ul class="class-names">
+                        <li><span class="grey lighten-3 ">bounceIn</span></li>
+                        <li><span class="grey lighten-3 ">bounceInDown</span></li>
+                        <li><span class="grey lighten-3 ">bounceInLeft</span></li>
+                        <li><span class="grey lighten-3 ">bounceInRight</span></li>
+                        <li><span class="grey lighten-3 ">bounceInUp</span></li>
+                        <li><span class="grey lighten-3 ">bounceOut</span></li>
+                        <li><span class="grey lighten-3 ">bounceOutDown</span></li>
+                        <li><span class="grey lighten-3 ">bounceOutLeft</span></li>
+                        <li><span class="grey lighten-3 ">bounceOutRight</span></li>
+                        <li><span class="grey lighten-3 ">bounceOutUp</span></li>
+                    </ul>
+                </li>
+                <li>
+                    <h5 id="Fading">Fading</h5>
+                    <ul class="class-names">
+                        <li><span class="grey lighten-3 ">fadeIn</span></li>
+                        <li><span class="grey lighten-3 ">fadeInDown</span></li>
+                        <li><span class="grey lighten-3 ">fadeInDownBig</span></li>
+                        <li><span class="grey lighten-3 ">fadeInLeft</span></li>
+                        <li><span class="grey lighten-3 ">fadeInLeftBig</span></li>
+                        <li><span class="grey lighten-3 ">fadeInRight</span></li>
+                        <li><span class="grey lighten-3 ">fadeInRightBig</span></li>
+                        <li><span class="grey lighten-3 ">fadeInUp</span></li>
+                        <li><span class="grey lighten-3 ">fadeInUpBig</span></li>
+                        <li><span class="grey lighten-3 ">fadeOut</span></li>
+                        <li><span class="grey lighten-3 ">fadeOutDown</span></li>
+                        <li><span class="grey lighten-3 ">fadeOutDownBig</span></li>
+                        <li><span class="grey lighten-3 ">fadeOutLeft</span></li>
+                        <li><span class="grey lighten-3 ">fadeOutleftBig</span></li>
+                        <li><span class="grey lighten-3 ">fadeOutRight</span></li>
+                        <li><span class="grey lighten-3 ">fadeOutRightBig</span></li>
+                        <li><span class="grey lighten-3 ">fadeOutUp</span></li>
+                        <li><span class="grey lighten-3 ">fadeOutUpBig</span></li>
+                    </ul>
+                </li>
+                <li>
+                    <h5 id="Flippers">Flippers</h5>
+                    <ul class="class-names">
+                        <li><span class="grey lighten-3 ">flipInX</span></li>
+                        <li><span class="grey lighten-3 ">flipInY</span></li>
+                        <li><span class="grey lighten-3 ">flipOutX</span></li>
+                        <li><span class="grey lighten-3 ">flipOutY</span></li>
+                    </ul>
+                </li>
+                <li>
+                    <h5 id="Lightspeed">Lightspeed</h5>
+                    <ul class="class-names">
+                        <li><span class="grey lighten-3 ">lightSpeedIn</span></li>
+                        <li><span class="grey lighten-3 ">lightSpeedOut</span></li>
+                    </ul>
+                </li>
+                <li>
+                    <h5 id="Rotating">Rotating</h5>
+                    <ul class="class-names">
+                        <li><span class="grey lighten-3 ">rotateIn</span></li>
+                        <li><span class="grey lighten-3 ">rotateInDownLeft</span></li>
+                        <li><span class="grey lighten-3 ">rotateInDownRight</span></li>
+                        <li><span class="grey lighten-3 ">rotateInpLeft</span></li>
+                        <li><span class="grey lighten-3 ">rotateInUpRight</span></li>
+                        <li><span class="grey lighten-3 ">rotateOut</span></li>
+                        <li><span class="grey lighten-3 ">rotateOutDownLeft</span></li>
+                        <li><span class="grey lighten-3 ">rotateOutDownRight</span></li>
+                        <li><span class="grey lighten-3 ">rotateOutUpLeft</span></li>
+                        <li><span class="grey lighten-3 ">rotateOutRight</span></li>
+                    </ul>
+                </li>
+                <li>
+                    <h5 id="Sliding">Sliding</h5>
+                    <ul class="class-names">
+                        <li><span class="grey lighten-3 ">slideIn</span></li>
+                        <li><span class="grey lighten-3 ">slideInDown</span></li>
+                        <li><span class="grey lighten-3 ">slideInLeft</span></li>
+                        <li><span class="grey lighten-3 ">slideInRight</span></li>
+                        <li><span class="grey lighten-3 ">slideInUp</span></li>
+                        <li><span class="grey lighten-3 ">slideOut</span></li>
+                        <li><span class="grey lighten-3 ">slideOutDown</span></li>
+                        <li><span class="grey lighten-3 ">slideOutLeft</span></li>
+                        <li><span class="grey lighten-3 ">slideOutRight</span></li>
+                        <li><span class="grey lighten-3 ">slideOutUp</span></li>
+                    </ul>
+                </li>
+                <li>
+                    <h5 id="Zoom">Zoom</h5>
+                    <ul class="class-names">
+                        <li><span class="grey lighten-3 ">zoomIn</span></li>
+                        <li><span class="grey lighten-3 ">zoomInDown</span></li>
+                        <li><span class="grey lighten-3 ">zoomInLeft</span></li>
+                        <li><span class="grey lighten-3 ">zoomInRight</span></li>
+                        <li><span class="grey lighten-3 ">zoomInUp</span></li>
+                        <li><span class="grey lighten-3 ">zoomOut</span></li>
+                        <li><span class="grey lighten-3 ">zoomOutDown</span></li>
+                        <li><span class="grey lighten-3 ">zoomOutLeft</span></li>
+                        <li><span class="grey lighten-3 ">zoomOutRight</span></li>
+                        <li><span class="grey lighten-3 ">zoomOutUp</span></li>
+                    </ul>
+                </li>
+                <li>
+                    <h5 id="Specials">Specials</h5>
+                    <ul class="class-names">
+                        <li><span class="grey lighten-3 ">hinge</span></li>
+                        <li><span class="grey lighten-3 ">jackInTheBox</span></li>
+                        <li><span class="grey lighten-3 ">rollIn</span></li>
+                        <li><span class="grey lighten-3 ">rollOut</span></li>
+                    </ul>
+                </li>
             </ul>
         </section>
         <section id="With_jQuery" class="main-section">
             <header><h4>With jQuery</h4></header>
+            <hr>
+            <p>You can do a whole bunch of other stuff with animate.css when you combine it with jQuery or add your own CSS rules. Dynamically add animations using jQuery with ease:</p>
+            <div class="card-panel grey lighten-3">
+                <span>
+                    $('#yourElement').addClass('animated bounceOutLeft');
+                </span>
+            </div>
+            <p>You can also detect when an animation ends:</p>
+            <div class="card-panel grey lighten-3">
+                <span>
+                    $('#yourElement').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', doSomething);
+                </span>
+            </div>
+            <p>View a <a href="https://www.youtube.com/watch?v=CBQGl6zokMs">video tutorial</a> on how to use Animate.css with jQuery here.</p>
+            <p>You can also extend jQuery to add a function that does it all for you:</p>
+            <div class="card-panel grey lighten-3">
+                <span>
+                    $.fn.extend({
+                    animateCss: function (animationName) {
+                    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+                    this.addClass('animated ' + animationName).one(animationEnd, function() {
+                    $(this).removeClass('animated ' + animationName);
+                    });
+                    }
+                    });
+                </span>
+            </div>
+            <p>And use it like this:</p>
+            <div class="card-panel grey lighten-3">
+                <span>
+                    $('#yourElement').animateCss('bounce');
+                </span>
+            </div>
+            <p>You can change the duration of your animations, add a delay or change the number of times that it plays:</p>
+            <div class="card-panel grey lighten-3">
+                <span>
+                   #yourElement {
+                    -vendor-animation-duration: 3s;
+                    -vendor-animation-delay: 2s;
+                    -vendor-animation-iteration-count: infinite;
+                    }
+                </span>
+            </div>
+            <i>Note: be sure to replace "vendor" in the CSS with the applicable vendor prefixes (webkit, moz, etc)</i>
         </section>
         <section id="Custom_Builds" class="main-section">
             <header><h4>Custom Builds</h4></header>
+            <hr>
+            <p>Animate.css is powered by <a href="http://gulpjs.com/">gulp.js</a>, and you can create custom builds pretty easily. First of all, you’ll need Gulp and all other dependencies:</p>
+            <div class="card-panel grey lighten-3">
+                <span>
+                    $ cd path/to/animate.css/<br>
+                    $ sudo npm install
+                </span>
+            </div>
+            <p>Next, run gulp to compile your custom builds. For example, if you want only some of the “attention seekers”, simply edit the animate-config.json
+                file to select only the animations you want to use.</p>
+            <div class="card-panel grey lighten-3">
+                <span>
+                     "attention_seekers": { "bounce": true, "flash": false, "pulse": false, "shake": true, "headShake": true, "swing": true,
+                    "tada": true, "wobble": true, "jello":true }
+                </span>
+            </div>
         </section>
         <section id="License" class="main-section">
             <header><h4>License</h4></header>
+            <hr>
+            <p>Animate.css is licensed under the MIT license. (<a href="http://opensource.org/licenses/MIT">http://opensource.org/licenses/MIT</a>)</p>
         </section>
         <section id="Contributing" class="main-section">
             <header><h4>Contributing</h4></header>
+            <hr>
+            <p>
+                Pull requests are the way to go here. I apologise in advance for the slow action on pull requests and issues. 
+                I only have two rules for submitting a pull request: match the naming convention (camelCase, categorised [fades, bounces, etc]) and let us see a demo of submitted animations in a <a href="https://codepen.io/">pen</a>. 
+                That last one is important.
+            </p>
         </section>
-    </main>
+        </div>
+    </main>  
 </div>
 <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
